@@ -320,6 +320,7 @@ namespace ShapeGame
                 {
                     thing.YVelocity = -thing.YVelocity;
                     thing.Center.Y += thing.YVelocity;
+					this.Reset();
                 }
 
                 // TODO Bounce net 
