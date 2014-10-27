@@ -257,13 +257,14 @@ namespace ShapeGame
                                 player.IsAlive = true;
 
                                 // Head, hands, feet (hit testing happens in order here)
-                                player.UpdateJointPosition(skeleton.Joints, JointType.Head);
-                                player.UpdateJointPosition(skeleton.Joints, JointType.HandLeft);
-                                player.UpdateJointPosition(skeleton.Joints, JointType.HandRight);
+                                //player.UpdateJointPosition(skeleton.Joints, JointType.Head);
+                                //player.UpdateJointPosition(skeleton.Joints, JointType.HandLeft);
+                                //player.UpdateJointPosition(skeleton.Joints, JointType.HandRight);
                                 player.UpdateJointPosition(skeleton.Joints, JointType.FootLeft);
                                 player.UpdateJointPosition(skeleton.Joints, JointType.FootRight);
 
                                 // Hands and arms
+                                /*
                                 player.UpdateBonePosition(skeleton.Joints, JointType.HandRight, JointType.WristRight);
                                 player.UpdateBonePosition(skeleton.Joints, JointType.WristRight, JointType.ElbowRight);
                                 player.UpdateBonePosition(skeleton.Joints, JointType.ElbowRight, JointType.ShoulderRight);
@@ -271,12 +272,13 @@ namespace ShapeGame
                                 player.UpdateBonePosition(skeleton.Joints, JointType.HandLeft, JointType.WristLeft);
                                 player.UpdateBonePosition(skeleton.Joints, JointType.WristLeft, JointType.ElbowLeft);
                                 player.UpdateBonePosition(skeleton.Joints, JointType.ElbowLeft, JointType.ShoulderLeft);
-
+                                */
                                 // Head and Shoulders
+                                /*
                                 player.UpdateBonePosition(skeleton.Joints, JointType.ShoulderCenter, JointType.Head);
                                 player.UpdateBonePosition(skeleton.Joints, JointType.ShoulderLeft, JointType.ShoulderCenter);
                                 player.UpdateBonePosition(skeleton.Joints, JointType.ShoulderCenter, JointType.ShoulderRight);
-
+                                */
                                 // Legs
                                 player.UpdateBonePosition(skeleton.Joints, JointType.HipLeft, JointType.KneeLeft);
                                 player.UpdateBonePosition(skeleton.Joints, JointType.KneeLeft, JointType.AnkleLeft);
@@ -290,7 +292,7 @@ namespace ShapeGame
                                 player.UpdateBonePosition(skeleton.Joints, JointType.HipCenter, JointType.HipRight);
 
                                 // Spine
-                                player.UpdateBonePosition(skeleton.Joints, JointType.HipCenter, JointType.ShoulderCenter);
+                                // player.UpdateBonePosition(skeleton.Joints, JointType.HipCenter, JointType.ShoulderCenter);
                             }
                         }
 
